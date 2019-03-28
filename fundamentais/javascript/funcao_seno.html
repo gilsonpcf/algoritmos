@@ -8,6 +8,8 @@
    Aplicações: Cálculos matemáticos e estatísticos.
 */
 
+// Função para calcular o fatorial (subalgoritmo)
+
 function fatorial(n)
 {
     var fat = 1;
@@ -20,6 +22,8 @@ function fatorial(n)
 	return fat;
 }
 
+// Algoritmo principal
+
 var x = prompt("Informe o valor de x:");
 var n = prompt("Informe o número de termos da série:");
 
@@ -30,12 +34,12 @@ var seno = 0;
 
 for (var i = 1; i <= n; i++)
 {
-    termo = Math.pow(x, j) / fatorial(j);
+    termo = Math.pow(x, j) / fatorial(j); // Usa aqui a função fatorial (subalgoritmo)
     seno = seno + sinal * termo;
 	sinal = -1 * sinal;
 	j = j + 2;
 }
 
-document.write(seno.toFixed(2));
+document.write("sen(x) = " + seno);
 
 </script>
