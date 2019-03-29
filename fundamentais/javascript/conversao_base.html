@@ -7,25 +7,25 @@
    Aplicações: Interpretação de instruções e dados armazenados em computador.
 */
 
-var n = prompt("Informe um número inteiro decimal:");
+var numero = prompt("Informe um número inteiro decimal:");
 
-var q = n;
-var r = new Array(100);
+var q = numero;
+var resto = [];
 var i = 0;
 
 while (q > 0)
 {
-	r[i] = q % 2;
+    resto[i] = q % 2;
     i++;
-	q = Math.floor(q / 2);
+    q = Math.floor(q/2);
 }
 
-document.write("Número " + n + " na base binária: ");
+document.write("Número na base decimal: " + numero + "<br>");
+document.write("Número na base binária: ");
 
-while (i > 0)
+for (var i = resto.length-1; i >=0; i--)
 {
-	i--;
-    document.write(r[i]);
+    document.write(resto[i]);
 }
 
 </script>
