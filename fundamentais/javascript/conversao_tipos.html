@@ -7,17 +7,18 @@
    Aplicações: Aplicações empresariais, processamento de dados em arquivos.
 */
 
-var sequencia = prompt("Informe uma sequência de caracteres númerica:");
+var texto = prompt("Informe uma sequência de caracteres númerica:");
 var caractere;
 var codigo;
+var valor;
 var numero = 0;
-var n = sequencia.length;
 
-for (var i = 0; i < n; i++)
+for (var i = 0; i < texto.length; i++)
 {
-    caractere = sequencia.charAt(i);
+	caractere = texto.charAt(i);
 	codigo = caractere.charCodeAt();
-	numero = numero * 10 + (codigo - 48);
+	valor = codigo - 48;
+	numero = numero * 10 + valor;
 }
 
 document.write("O número decimal correspondente é: " + numero);
