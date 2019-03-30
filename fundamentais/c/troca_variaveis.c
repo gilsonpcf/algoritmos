@@ -1,36 +1,27 @@
-/*
- Algoritmo Fundamental N∫ 1
- Disciplina: Algoritmos e ProgramaÁ„o de Computadores
- Professor : Gilson Pereira
- DescriÁ„o : Troca dos valores de duas vari·veis
- Problema  : Dadas duas vari·veis, trocar os valores atribuÌdos a elas.
- AplicaÁıes: Algoritmos de ordenaÁ„o.
-*/
+// Algoritmo Fundamental N¬∫ 1
+// Descri√ß√£o : Troca dos valores de duas vari√°veis.
+// Problema  : Dadas duas vari√°veis, trocar os valores atribu√≠dos a elas.
+// Aplica√ß√µes: Algoritmos de ordena√ß√£o.
 
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
 {
-    // DeclaraÁıes das vari·veis
-    int a, b, c;
+    // Declara√ß√µes das vari√°veis
+    int a, b, aux;
 
-    printf("Informe o valor de A: ");
+    printf("Informe valor para a vari√°vel A: ");
     scanf("%d", &a);
-    printf("Informe o valor de B: ");
+    printf("Informe valor para a vari√°vel B: ");
     scanf("%d", &b);
 
-    // Guardar em C o valor original de A
-    c = a;
+    aux = a; // Guarda em AUX o valor original de A
+    a = b;   // Atribui a A o valor original de B
+    b = aux; // Atribui a B o valor original de A, que est√° armazenado em AUX
 
-    // Atribuir a A o valor original de B
-    a = b;
-
-    // Atribuir a B o valor original de A, que est· armazenado em C
-    b = c;
-
-    printf("Novo valor de A: %d\n", a);
-    printf("Novo valor de B: %d", b);
+    printf("Novo valor da vari√°vel A: %d\n", a);
+    printf("Novo valor da vari√°vel B: %d", b);
 
     return 0;
 }
