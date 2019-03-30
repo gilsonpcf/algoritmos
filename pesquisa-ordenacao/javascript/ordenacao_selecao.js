@@ -1,5 +1,5 @@
-// Intercalação, ordenação e pesquisa
-// Descrição : Ordenação por seleção.
+// Pesquisa e ordenação
+// Descrição : Ordenação por seleção
 // Problema  : Dado um conjunto ordenado aleatoriamente de N inteiros,
 //             classificá-los em ordem crescente usando a ordenação por seleção.
 // Aplicações: Ordenação apenas de pequenas quantidades de dados.
