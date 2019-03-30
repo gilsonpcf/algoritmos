@@ -7,9 +7,9 @@ var a = prompt("Informe valor para a variável A:");
 var b = prompt("Informe valor para a variável B:");
 var aux;
 
-aux = a;
-a = b;
-b = aux;
+aux = a; // Guarda em AUX o valor original de A
+a = b;   // Atribui a A o valor original de B
+b = aux; // Atribui a B o valor original de A, que está armazenado em AUX
 
 document.write("Novo valor da variável A: " + a + "<br>");
 document.write("Novo valor da variável B: " + b);
