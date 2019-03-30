@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<script>
+/* Técnica para Vetor Nº 2
+   Descrição : Contagem com vetor (histograma).
+   Problema  : Dado um conjunto de N notas de um exame, fazer uma contagem
+               do número de alunos que obtiveram cada nota possível
+               (no intervalo de 0 a 100).
+   Aplicações: Análise estatística.
+*/
+
+var cont = new Array(101); // Vetor de contadores (0 a 100)
+var nota;
+var n = prompt("Informe a quantidade de notas:");
+
+for (var i = 0; i < cont.length; i++) // Inicializa todos os contadores
+{
+    cont[i] = 0;
+}
+
+for (var i = 1; i <= n; i++)
+{
+    nota = prompt("Informe a nota (0 a 100) do aluno " + i + ": ");
+	cont[nota]++; // Incrementa o contador da nota
+}
+
+for (var i = 0; i < cont.length; i++) // Exibe a distribuição de frequência das notas
+{
+    if (cont[i] != 0)
+	{
+	    document.write("Nota: " + i + " - Quantidade: " + cont[i] + "<br>");
+	}
+}
+
+</script>
