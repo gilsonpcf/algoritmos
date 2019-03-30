@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+<script>
+/* Intercalação, ordenação e pesquisa
+   Descrição : Intercalação bidirecional.
+   Problema  : Mesclar dois vetores de inteiros, ambos com seus elementos
+               em ordem crescente, em um único vetor ordenado.
+   Aplicações: Ordenação, processamento de dados.
+*/
+
+var a = [15, 18, 42, 51];
+var b = [8, 11, 16, 17, 44, 58, 71, 74];
+var total = a.length + b.length;
+var c = new Array(total);
+
+var i = 0, j = 0, k = 0;
+
+while (i < a.length && j < b.length)
+{
+    if (a[i] < b[j]) // Compara dois elementos de A e B, e inclui o menor deles em C
+	{
+		c[k] = a[i];
+		i++;
+	}
+	else
+	{
+		c[k] = b[j];
+		j++;
+	}
+	k++;
+}
+
+while (i < a.length) // Copia para C os elementos restantes de A
+{
+	c[k] = a[i];
+	i++;
+	k++;
+}
+
+while (j < b.length)  // Copia para C os elementos restantes de B
+{
+	c[k] = b[j];
+	j++;
+	k++;
+}
+
+for (var k = 0; k < c.length; k++) // Exibe os elementos de C
+{
+	document.write(c[k] + " ");
+}
+
+</script>
