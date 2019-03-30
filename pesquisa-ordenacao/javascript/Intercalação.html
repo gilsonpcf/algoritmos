@@ -9,14 +9,17 @@
 
 var a = [15, 18, 42, 51];
 var b = [8, 11, 16, 17, 44, 58, 71, 74];
-var total = a.length + b.length;
-var c = new Array(total);
+var c = [];
+var tamanho = a.length + b.length;
+var i = 0;
+var j = 0;
 
-var i = 0, j = 0, k = 0;
-
-while (i < a.length && j < b.length)
+for (var k = 0; k < tamanho; k++)
 {
-    if (a[i] < b[j]) // Compara dois elementos de A e B, e inclui o menor deles em C
+	// Compara dois elementos de A e B, e inclui o menor deles em C
+	// A condição j == b.length fará com que os elementos restantes
+	// de A ou de B sejam copiados para C
+	if (a[i] < b[j] || j == b.length)
 	{
 		c[k] = a[i];
 		i++;
@@ -26,26 +29,8 @@ while (i < a.length && j < b.length)
 		c[k] = b[j];
 		j++;
 	}
-	k++;
 }
 
-while (i < a.length) // Copia para C os elementos restantes de A
-{
-	c[k] = a[i];
-	i++;
-	k++;
-}
-
-while (j < b.length)  // Copia para C os elementos restantes de B
-{
-	c[k] = b[j];
-	j++;
-	k++;
-}
-
-for (var k = 0; k < c.length; k++) // Exibe os elementos de C
-{
-	document.write(c[k] + " ");
-}
+document.write(c); // Exibe os elementos de C
 
 </script>
