@@ -8,11 +8,11 @@
    Aplicações: Análise estatística.
 */
 
-var cont = new Array(101); // Vetor de contadores (0 a 100)
+var cont = []; // Vetor de contadores
 var nota;
 var n = prompt("Informe a quantidade de notas:");
 
-for (var i = 0; i < cont.length; i++) // Inicializa todos os contadores
+for (var i = 0; i < 101; i++) // Inicializa todos os 101 contadores (0 a 100)
 {
     cont[i] = 0;
 }
