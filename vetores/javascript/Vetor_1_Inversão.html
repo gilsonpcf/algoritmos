@@ -10,18 +10,14 @@
 var vetor = [7, 3, 5, 1, 8, 2, 4];
 var aux;
 var n = vetor.length; // Tamanho do vetor
-var trocas = Math.floor(n/2); // Número de trocas necessárias para inverter o vetor
+var meio = Math.floor(n/2); // Posição no meio do vetor
 
-for (var i = 0; i < trocas; i++)
-{
+for (var i = 0; i < meio; i++) {
     aux = vetor[i];
-    vetor[i] = vetor[n-i-1];
-    vetor[n-i-1] = aux;
+    vetor[i] = vetor[n-1-i];
+    vetor[n-1-i] = aux;
 }
 
-for (var i = 0; i < n; i++) // Exibe os elementos do vetor
-{
-    document.write(vetor[i] + " ");
-}
+document.write(vetor); // Exibe os elementos do vetor
 
 </script>
