@@ -25,5 +25,3 @@ for (var i = 0; i < v.length-1; i++) {
 }
 
 document.write(v); // Exibe os elementos do vetor
-
-</script>
