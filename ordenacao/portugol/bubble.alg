@@ -1,14 +1,14 @@
-Algoritmo "Algoritmo Técnico No. 4"
-// Disciplina: Algoritmos e Programação de Computadores
+Algoritmo "Algoritmo TÃ©cnico No. 4"
+// Disciplina: Algoritmos e ProgramaÃ§Ã£o de Computadores
 // Professor : Gilson Pereira
-// Descrição : Ordenação por troca (método da bolha)
-// Problema  : Classificar em ordem ascendente um conjunto de N números 
-//             ordenado aleatoriamente, usando um método de troca.
-// Aplicações: Apenas para classificar dados em que uma pequena 
-//             percentagem de elementos está fora de ordem.
+// DescriÃ§Ã£o : OrdenaÃ§Ã£o por troca (mÃ©todo da bolha)
+// Problema  : Classificar em ordem ascendente um conjunto de N nÃºmeros 
+//             ordenado aleatoriamente, usando um mÃ©todo de troca.
+// AplicaÃ§Ãµes: Apenas para classificar dados em que uma pequena 
+//             percentagem de elementos estÃ¡ fora de ordem.
 
 Var
-    // Declarações das variáveis
+    // DeclaraÃ§Ãµes das variÃ¡veis
     v : vetor[1..100] de inteiro
     n, i, j, aux : inteiro
 
@@ -19,7 +19,7 @@ Inicio
     
     // Ler os N elementos do vetor
     para i de 1 ate n faca
-        escreva("Informe o elemento da posição ", i, ": ")
+        escreva("Informe o elemento da posiÃ§Ã£o ", i, ": ")
         leia(v[i])
     fimpara
 
