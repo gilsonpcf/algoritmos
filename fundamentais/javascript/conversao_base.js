@@ -1,25 +1,25 @@
 // Algoritmo Fundamental Nº 8
-// Descrição : Conversão de base.
-// Problema  : Converter um número inteiro decimal para sua representação
-//             binária correspondente.
-// Aplicações: Interpretação de instruções e dados armazenados em computador.
+// Descrição : Conversão de base
+// Problema  : Converter um número inteiro decimal para a
+//             sua representação binária correspondente.
+// Aplicações: Interpretação de dados e instruções armazenados em computador.
 
-var numero = prompt("Informe um número inteiro decimal:");
+var n = prompt("Número inteiro decimal:");
 
-var q = numero;
-var resto = [];
-var i = 0;
+var q = n;
+var ndigit = 0;
+var r;
+var binario = [];
 
-while (q > 0)
-{
-    resto[i] = q % 2;
-    i++;
-    q = Math.floor(q/2);
-}
+do {
+	r = q % 2;
+    binario[ndigit] = r;
+    ndigit = ndigit + 1;
+    q = Math.trunc(q / 2);
+} while (q != 0);
 
-document.write("Número na base decimal: " + numero + "<br>");
-document.write("Número na base binária: ");
+document.write("Número binário: ");
 
-for (var i = resto.length-1; i >=0; i--) {
-    document.write(resto[i]);
+for (var i = ndigit-1; i >= 0; i--) {
+    document.write(binario[i]);
 }
