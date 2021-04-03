@@ -1,20 +1,18 @@
 // Algoritmo Fundamental Nº 9
-// Descrição : Conversão de caractere para número.
-// Problema  : Converter a representação em caractere de um número inteiro
-//             para o seu formato decimal convencional.
-// Aplicações: Aplicações empresariais, processamento de dados em arquivos.
+// Descrição : Conversão de caractere para número
+// Problema  : Dada a representação em caracteres de um número inteiro,
+//             convertê-la para o seu formato decimal convencional.
+// Aplicações: Aplicativos de negócios, processamento de dados.
 
-var texto = prompt("Informe uma sequência de caracteres númerica:");
-var caractere;
-var codigo;
-var valor;
-var numero = 0;
+var numero = prompt("Número inteiro:");
+var n = numero.length;
+var decimal = 0;
+var base = 48;
+var digito;
 
-for (var i = 0; i < texto.length; i++) {
-    caractere = texto.charAt(i);
-    codigo = caractere.charCodeAt();
-    valor = codigo - 48;
-    numero = numero * 10 + valor;
+for (var i = 0; i < n; i++) {
+    digito = numero.charCodeAt(i) - base;
+    decimal = decimal * 10 + digito;
 }
 
-document.write("O número decimal correspondente é: " + numero);
+document.write("Formato decimal: " + decimal);
