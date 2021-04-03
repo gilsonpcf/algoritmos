@@ -1,15 +1,13 @@
 // Algoritmo Fundamental Nº 4
-// Descrição : Cálculo do fatorial.
-// Problema  : Dado um número N, calcular o fatorial de N, onde N >= 0.
+// Descrição : Cálculo do fatorial
+// Problema  : Dado um número n, calcular o fatorial de n, onde n >= 0.
 // Aplicações: Probabilidade, cálculos estatísticos e matemáticos.
 
-var n = prompt("Informe um número:");
-var fatorial = 1;
-var i = n;
+var n = prompt("Número:");
+var fator = 1;
 
-while (i >= 1) {
-	fatorial = fatorial * i;
-	i = i - 1;
+for (var i = 1; i <= n; i++) {
+    fator = i * fator;
 }
 
-document.write("O fatorial de " + n + " é " + fatorial);
+document.write("Fatorial = " + fator);
