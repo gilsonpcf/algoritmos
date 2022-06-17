@@ -1,5 +1,3 @@
-<meta charset="UTF-8">
-<script>
 var n = parseInt(prompt("Quantidade de pessoas"));
 var pessoas = [];
 
@@ -12,5 +10,3 @@ for (var i = 0; i < n; i++) {
 }
 
 localStorage.setItem("cadastro", JSON.stringify(pessoas));
-
-</script>
