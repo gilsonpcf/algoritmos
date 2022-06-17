@@ -19,7 +19,7 @@ for (var i = 0; i < 5; i++)
 
 for (var i = 0; i < 5; i++)
 {
-	document.write(pessoa[i].nome + " ");
-	document.write(pessoa[i].idade+ " ");
-	document.write(pessoa[i].email+ "<br>");
+	console.log(pessoa[i].nome);
+	console.log(pessoa[i].idade);
+	console.log(pessoa[i].email);
 }
