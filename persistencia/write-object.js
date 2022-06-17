@@ -1,5 +1,3 @@
-<meta charset="UTF-8">
-<script>
 var pessoa = {
 		nome : prompt("Nome"),
 		idade : parseInt(prompt("Idade")),
@@ -7,5 +5,3 @@ var pessoa = {
 	}
 
 localStorage.setItem("pessoa", JSON.stringify(pessoa));
-
-</script>
