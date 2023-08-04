@@ -26,8 +26,8 @@ var i = 1;
 var sinal = 1;
 
 for (var j = 1; j <= n; j++) {
-    termo = sinal * Math.pow(x, i) / fatorial(i);
-    s = s + termo;
+    termo = Math.pow(x, i) / fatorial(i);
+    s = s + sinal * termo;
     i = i + 2;
     sinal = -sinal;
 }
