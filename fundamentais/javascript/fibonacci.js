@@ -17,12 +17,12 @@ var c;
 if (n == 1) {
     document.write(a);
 } else {
-    document.write(a, " ", b);
+    document.write(a + " " + b);
 }
 
 while (i < n) {
     c = a + b;
-    document.write(" ", c);
+    document.write(" " + c);
     a = b;
     b = c;
     i++;
