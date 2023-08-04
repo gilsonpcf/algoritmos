@@ -21,9 +21,9 @@ if (n == 1) {
 }
 
 while (i < n) {
-	i = i + 1;
     c = a + b;
     document.write(" ", c);
     a = b;
     b = c;
+    i++;
 }
